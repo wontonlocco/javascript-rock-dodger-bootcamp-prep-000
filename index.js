@@ -138,8 +138,9 @@ function moveDodger(e) {
    * if the right arrow is pressed. (Check the constants
    * we've declared for you above.)
    * And be sure to use the functions declared below!
+   
+   if keyboard key or mouse button, pressed for the event is an indexOf left arrow or RIGHT_ARROW and is > -1(is it a valid keycode char, if so call the preventDefault and stopPropagation on the event)
    */
-   //if keyboard key or mouse button, pressed for the event is an indexOf left arrow or RIGHT_ARROW and is > -1
    if([LEFT_ARROW, RIGHT_ARROW].indexOf(e.which) > -1){
     e.preventDefault();
     e.stopPropagation();
