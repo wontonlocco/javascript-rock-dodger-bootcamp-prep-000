@@ -140,7 +140,10 @@ function moveDodger(e) {
    * And be sure to use the functions declared below!
    */
    //if keyboard key or mouse button was pressed for the event is equal to left arrow..
-   
+   if([LEFT_ARROW, RIGHT_ARROW].indexOf(e.which) > -1){
+    e.preventDefault();
+    e.stopPropagation();
+  }
    if(e.which == LEFT_ARROW){
      moveDodgerLeft();
    }
